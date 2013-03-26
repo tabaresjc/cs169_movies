@@ -1,0 +1,20 @@
+%h1{:id => 'new_movie_title'} Create New Movie
+
+= form_tag movies_path do
+
+  = label :movie, :title, 'Title'
+  = text_field :movie, 'title'
+
+  = label :movie, :director, 'Director'
+  = text_field :movie, 'director'
+
+  = label :movie, :description, 'Description'
+  = text_area :movie, 'description', :size => "35x5"
+
+  = label :movie, :rating, 'Rating'
+  = select :movie, :rating, ['G','PG','PG-13','R','NC-17']
+
+  = label :movie, :release_date, 'Released On'
+  = date_select :movie, :release_date
+
+

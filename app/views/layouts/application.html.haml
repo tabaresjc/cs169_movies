@@ -1,0 +1,24 @@
+!!! 5
+%html
+  %head
+    %title Rotten Potatoes!
+    = stylesheet_link_tag 'application'
+    = stylesheet_link_tag 'kendo/styles/kendo.common.min.css'
+    = stylesheet_link_tag 'kendo/styles/kendo.default.min.css'
+    = stylesheet_link_tag 'http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/themes/smoothness/jquery-ui.min.css'
+    = javascript_include_tag 'http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js'
+    = javascript_include_tag 'http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js'
+    = javascript_include_tag 'application'
+    = csrf_meta_tags
+
+  %body
+    %h1.title Rotten Potatoes!
+    #main
+      - if flash[:notice]
+        #message_container
+          #notice.message= flash[:notice]
+      - elsif flash[:warning]
+        #message_container
+          #warning.message= flash[:warning]
+
+      = yield

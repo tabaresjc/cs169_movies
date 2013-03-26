@@ -1,0 +1,19 @@
+%h1{:id => 'edit_movie_title'} Edit Existing Movie
+
+= form_tag movie_path(@movie), :method => :put do
+
+  = label :movie, :title, 'Title'
+  = text_field :movie, 'title'
+
+  = label :movie, :rating, 'Rating'
+  = select :movie, :rating, ['G','PG','PG-13','R','NC-17']
+
+  = label :movie, :release_date, 'Released On'
+  = date_select :movie, :release_date
+
+  = label :movie, :director, 'Director'
+  = text_field :movie, 'director'
+
+  = label :movie, :description, 'Description'
+  = text_area :movie, 'description', :size => "35x5"
+
