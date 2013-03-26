@@ -5,8 +5,8 @@
 // the compiled file.
 //
 //= require jquery/js/jquery-1.9.1
-//= require jquery/js/jquery-ui-1.10.2.custom.min
-// require bootstrap/js/bootstrap
+// require jquery/js/jquery-ui-1.10.2.custom.min
+//= require bootstrap/js/bootstrap
 //= require jquery_ujs
 //= require_tree .
 

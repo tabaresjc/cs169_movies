@@ -1,10 +1,6 @@
-$.noConflict();
-jQuery(document).ready(function($) {
 	RP = {
 	    setup: function() {
-		// construct new DOM elements
-	
-		
+		// construct new DOM elements		
 		$('#message_container #warning').addClass('btn btn-warning btn-large btn-block');
 		$('#message_container #notice').addClass('btn btn-success btn-large btn-block');
 	    },
@@ -94,6 +90,9 @@ jQuery(document).ready(function($) {
 			return(false);		
 		},
 		showNewMovie: function(data) {
+			$('#editMovieBox').html(data).addClass('modal hide fade').modal();
+			$('#editMovieBox').modal('show');
+			/*
 			$('#editMovieBox').html(data).dialog({
 				title: $('#new_movie_title').hide().text(),
 			      	width: '50%',
@@ -114,6 +113,7 @@ jQuery(document).ready(function($) {
 					}
 			      	}
 			});
+			*/
 		},
 		redirectToHome: function() {
 			var url = $(location).attr('href');
@@ -122,5 +122,4 @@ jQuery(document).ready(function($) {
 		}
 	}
 	$(RPAddMovie.setup);
-});
 

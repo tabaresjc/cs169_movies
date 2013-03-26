@@ -1,24 +1,24 @@
 !!! 5
 %html
-  %head
-    %title Rotten Potatoes!
-    = stylesheet_link_tag 'bootstrap/css/bootstrap'
-    = stylesheet_link_tag 'bootstrap/css/bootstrap-responsive'
-    = stylesheet_link_tag 'jquery/styles/jquery-ui-1.10.2.custom.min'
-    = stylesheet_link_tag 'application'
-    = javascript_include_tag 'application'
-    = csrf_meta_tags
+	%head
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		= csrf_meta_tags
+		= stylesheet_link_tag 'bootstrap/css/bootstrap'
+		= stylesheet_link_tag 'bootstrap/css/bootstrap-responsive'
+		= stylesheet_link_tag 'jquery/styles/jquery-ui-1.10.2.custom.min'
+		= stylesheet_link_tag 'application'
 
-  %body
-    %div.well
-      %div.container
-        %h2 Rotten Potatoes!!!
-    %div.container
-      - if flash[:notice]
-        #message_container
-          #notice.message= flash[:notice]
-      - elsif flash[:warning]
-        #message_container
-          #warning.message= flash[:warning]
-      
-      = yield
+	%body
+		= render :partial => "layouts/header_container"
+		%header{:class=>'jumbotron subhead'}
+		%div.container
+			- if flash[:notice]
+				%div{:class=>'btn btn-success btn-large btn-block'}= flash[:notice]
+			- elsif flash[:warning]
+				%div{:class=>'btn btn-warning btn-large btn-block'}= flash[:warning]
+
+		%div.container-fluid
+			%div.row-fluid
+				= yield
+
+	= javascript_include_tag 'application'
