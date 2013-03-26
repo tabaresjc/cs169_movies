@@ -2,7 +2,6 @@ RP = {
     setup: function() {
         // construct new DOM elements
 	$('#movies').removeClass('default').kendoGrid();
-	
 	$('#message_container').addClass('ui-widget');
 	$('#message_container #warning').addClass('ui-state-error ui-corner-all');
 	$('#message_container #notice').addClass('ui-state-default ui-corner-all');	
