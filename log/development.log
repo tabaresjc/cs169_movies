@@ -17561,3 +17561,387 @@ Served asset /kendo/styles/Default/loading-image.gif - 304 Not Modified (0ms)
 
 Started GET "/assets/jquery/styles/images/ui-bg_highlight-soft_100_f6f6f6_1x100.png" for 127.0.0.1 at 2013-03-26 14:47:30 +0900
 Served asset /jquery/styles/images/ui-bg_highlight-soft_100_f6f6f6_1x100.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery/styles/images/ui-bg_highlight-soft_25_0073ea_1x100.png" for 127.0.0.1 at 2013-03-26 14:55:55 +0900
+Served asset /jquery/styles/images/ui-bg_highlight-soft_25_0073ea_1x100.png - 304 Not Modified (0ms)
+
+
+Started GET "/movies/" for 127.0.0.1 at 2013-03-26 14:57:18 +0900
+  Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.4ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG', 'PG-13', 'NC-17', 'R')[0m
+Rendered movies/index.html.haml within layouts/application (35.2ms)
+Completed 200 OK in 58ms (Views: 53.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-26 14:57:19 +0900
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/kendo/styles/kendo.default.min.css?body=1" for 127.0.0.1 at 2013-03-26 14:57:19 +0900
+Served asset /kendo/styles/kendo.default.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/kendo/styles/kendo.common.min.css?body=1" for 127.0.0.1 at 2013-03-26 14:57:19 +0900
+Served asset /kendo/styles/kendo.common.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery/styles/jquery-ui-1.10.2.custom.min?body=1" for 127.0.0.1 at 2013-03-26 14:57:19 +0900
+Served asset /jquery/styles/jquery-ui-1.10.2.custom.min - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery/js/jquery-1.9.1.js?body=1" for 127.0.0.1 at 2013-03-26 14:57:19 +0900
+Served asset /jquery/js/jquery-1.9.1.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery/js/jquery-ui-1.10.2.custom.min.js?body=1" for 127.0.0.1 at 2013-03-26 14:57:19 +0900
+Served asset /jquery/js/jquery-ui-1.10.2.custom.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-26 14:57:19 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/kendo/js/kendo.web.min.js?body=1" for 127.0.0.1 at 2013-03-26 14:57:19 +0900
+Served asset /kendo/js/kendo.web.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/movie.js?body=1" for 127.0.0.1 at 2013-03-26 14:57:19 +0900
+Served asset /movie.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-26 14:57:19 +0900
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/kendo/styles/Default/loading-image.gif" for 127.0.0.1 at 2013-03-26 14:57:20 +0900
+Served asset /kendo/styles/Default/loading-image.gif - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery/styles/images/ui-bg_highlight-soft_100_f6f6f6_1x100.png" for 127.0.0.1 at 2013-03-26 14:57:20 +0900
+Served asset /jquery/styles/images/ui-bg_highlight-soft_100_f6f6f6_1x100.png - 304 Not Modified (0ms)
+
+
+Started GET "/movies/" for 127.0.0.1 at 2013-03-26 14:58:27 +0900
+  Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.6ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG', 'PG-13', 'NC-17', 'R')
+Rendered movies/index.html.haml within layouts/application (60.6ms)
+Compiled application.js  (17ms)  (pid 2165)
+Compiled movie.js  (0ms)  (pid 2165)
+Completed 200 OK in 139ms (Views: 125.5ms | ActiveRecord: 10.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-26 14:58:28 +0900
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery/js/jquery-1.9.1.js?body=1" for 127.0.0.1 at 2013-03-26 14:58:28 +0900
+Served asset /jquery/js/jquery-1.9.1.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery/js/jquery-ui-1.10.2.custom.min.js?body=1" for 127.0.0.1 at 2013-03-26 14:58:28 +0900
+Served asset /jquery/js/jquery-ui-1.10.2.custom.min.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/kendo/styles/kendo.default.min.css?body=1" for 127.0.0.1 at 2013-03-26 14:58:28 +0900
+Served asset /kendo/styles/kendo.default.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery/styles/jquery-ui-1.10.2.custom.min?body=1" for 127.0.0.1 at 2013-03-26 14:58:28 +0900
+Served asset /jquery/styles/jquery-ui-1.10.2.custom.min - 304 Not Modified (0ms)
+
+
+Started GET "/assets/kendo/styles/kendo.common.min.css?body=1" for 127.0.0.1 at 2013-03-26 14:58:28 +0900
+Served asset /kendo/styles/kendo.common.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-26 14:58:28 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/movie.js?body=1" for 127.0.0.1 at 2013-03-26 14:58:28 +0900
+Served asset /movie.js - 200 OK (16ms)
+
+
+Started GET "/assets/kendo/js/kendo.web.min.js?body=1" for 127.0.0.1 at 2013-03-26 14:58:28 +0900
+Served asset /kendo/js/kendo.web.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-26 14:58:28 +0900
+Served asset /application.js - 200 OK (36ms)
+
+
+Started GET "/assets/jquery/styles/images/ui-bg_highlight-soft_100_f6f6f6_1x100.png" for 127.0.0.1 at 2013-03-26 14:58:29 +0900
+Served asset /jquery/styles/images/ui-bg_highlight-soft_100_f6f6f6_1x100.png - 304 Not Modified (6ms)
+
+
+Started GET "/assets/kendo/styles/Default/loading-image.gif" for 127.0.0.1 at 2013-03-26 14:58:29 +0900
+Served asset /kendo/styles/Default/loading-image.gif - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery/styles/images/ui-bg_highlight-soft_25_0073ea_1x100.png" for 127.0.0.1 at 2013-03-26 14:58:35 +0900
+Served asset /jquery/styles/images/ui-bg_highlight-soft_25_0073ea_1x100.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery/styles/images/ui-bg_glass_65_ffffff_1x400.png" for 127.0.0.1 at 2013-03-26 14:58:41 +0900
+Served asset /jquery/styles/images/ui-bg_glass_65_ffffff_1x400.png - 304 Not Modified (0ms)
+
+
+Started GET "/movies/1" for 127.0.0.1 at 2013-03-26 14:58:41 +0900
+  Processing by MoviesController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Rendered movies/_movie.html.haml (16.3ms)
+Completed 200 OK in 30ms (Views: 25.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/jquery/styles/images/ui-icons_666666_256x240.png" for 127.0.0.1 at 2013-03-26 14:58:42 +0900
+Served asset /jquery/styles/images/ui-icons_666666_256x240.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery/styles/images/ui-bg_flat_75_ffffff_40x100.png" for 127.0.0.1 at 2013-03-26 14:58:42 +0900
+Served asset /jquery/styles/images/ui-bg_flat_75_ffffff_40x100.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery/styles/images/ui-bg_highlight-soft_50_dddddd_1x100.png" for 127.0.0.1 at 2013-03-26 14:58:42 +0900
+Served asset /jquery/styles/images/ui-bg_highlight-soft_50_dddddd_1x100.png - 304 Not Modified (0ms)
+
+
+Started GET "/movies/12" for 127.0.0.1 at 2013-03-26 14:58:47 +0900
+  Processing by MoviesController#show as */*
+  Parameters: {"id"=>"12"}
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", "12"]]
+Rendered movies/_movie.html.haml (29.5ms)
+Completed 200 OK in 61ms (Views: 53.9ms | ActiveRecord: 4.3ms)
+
+
+Started GET "/movies/new" for 127.0.0.1 at 2013-03-26 14:58:51 +0900
+  Processing by MoviesController#new as */*
+Rendered movies/_movie_new.html.haml (12.0ms)
+Completed 200 OK in 24ms (Views: 23.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies/" for 127.0.0.1 at 2013-03-26 14:59:09 +0900
+  Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.5ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG', 'PG-13', 'NC-17', 'R')[0m
+Rendered movies/index.html.haml within layouts/application (43.5ms)
+Completed 200 OK in 66ms (Views: 60.3ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/jquery/styles/jquery-ui-1.10.2.custom.min?body=1" for 127.0.0.1 at 2013-03-26 14:59:09 +0900
+Served asset /jquery/styles/jquery-ui-1.10.2.custom.min - 304 Not Modified (1ms)
+
+
+Started GET "/assets/kendo/styles/kendo.common.min.css?body=1" for 127.0.0.1 at 2013-03-26 14:59:09 +0900
+Served asset /kendo/styles/kendo.common.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-26 14:59:09 +0900
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-26 14:59:09 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery/js/jquery-1.9.1.js?body=1" for 127.0.0.1 at 2013-03-26 14:59:09 +0900
+Served asset /jquery/js/jquery-1.9.1.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery/js/jquery-ui-1.10.2.custom.min.js?body=1" for 127.0.0.1 at 2013-03-26 14:59:09 +0900
+Served asset /jquery/js/jquery-ui-1.10.2.custom.min.js - 304 Not Modified (20ms)
+
+
+Started GET "/assets/kendo/styles/kendo.default.min.css?body=1" for 127.0.0.1 at 2013-03-26 14:59:09 +0900
+Served asset /kendo/styles/kendo.default.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/kendo/js/kendo.web.min.js?body=1" for 127.0.0.1 at 2013-03-26 14:59:09 +0900
+Served asset /kendo/js/kendo.web.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/movie.js?body=1" for 127.0.0.1 at 2013-03-26 14:59:09 +0900
+Served asset /movie.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-26 14:59:09 +0900
+Served asset /application.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery/styles/images/ui-bg_highlight-soft_100_f6f6f6_1x100.png" for 127.0.0.1 at 2013-03-26 14:59:11 +0900
+Served asset /jquery/styles/images/ui-bg_highlight-soft_100_f6f6f6_1x100.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/kendo/styles/Default/loading-image.gif" for 127.0.0.1 at 2013-03-26 14:59:11 +0900
+Served asset /kendo/styles/Default/loading-image.gif - 304 Not Modified (0ms)
+
+
+Started GET "/movies/" for 127.0.0.1 at 2013-03-26 14:59:13 +0900
+  Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.5ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG', 'PG-13', 'NC-17', 'R')
+Rendered movies/index.html.haml within layouts/application (157.9ms)
+Completed 200 OK in 186ms (Views: 180.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-26 14:59:13 +0900
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/kendo/styles/kendo.default.min.css?body=1" for 127.0.0.1 at 2013-03-26 14:59:13 +0900
+Served asset /kendo/styles/kendo.default.min.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery/styles/jquery-ui-1.10.2.custom.min?body=1" for 127.0.0.1 at 2013-03-26 14:59:13 +0900
+Served asset /jquery/styles/jquery-ui-1.10.2.custom.min - 304 Not Modified (0ms)
+
+
+Started GET "/assets/kendo/styles/kendo.common.min.css?body=1" for 127.0.0.1 at 2013-03-26 14:59:13 +0900
+Served asset /kendo/styles/kendo.common.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery/js/jquery-ui-1.10.2.custom.min.js?body=1" for 127.0.0.1 at 2013-03-26 14:59:13 +0900
+Served asset /jquery/js/jquery-ui-1.10.2.custom.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery/js/jquery-1.9.1.js?body=1" for 127.0.0.1 at 2013-03-26 14:59:13 +0900
+Served asset /jquery/js/jquery-1.9.1.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-26 14:59:13 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/movie.js?body=1" for 127.0.0.1 at 2013-03-26 14:59:13 +0900
+Served asset /movie.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-26 14:59:13 +0900
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/kendo/js/kendo.web.min.js?body=1" for 127.0.0.1 at 2013-03-26 14:59:13 +0900
+Served asset /kendo/js/kendo.web.min.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/kendo/styles/Default/loading-image.gif" for 127.0.0.1 at 2013-03-26 14:59:15 +0900
+Served asset /kendo/styles/Default/loading-image.gif - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery/styles/images/ui-bg_highlight-soft_100_f6f6f6_1x100.png" for 127.0.0.1 at 2013-03-26 14:59:15 +0900
+Served asset /jquery/styles/images/ui-bg_highlight-soft_100_f6f6f6_1x100.png - 304 Not Modified (0ms)
+
+
+Started GET "/movies/" for 127.0.0.1 at 2013-03-26 14:59:16 +0900
+  Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.5ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG', 'PG-13', 'NC-17', 'R')[0m
+Rendered movies/index.html.haml within layouts/application (34.6ms)
+Completed 200 OK in 61ms (Views: 56.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-26 14:59:17 +0900
+Served asset /application.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery/js/jquery-1.9.1.js?body=1" for 127.0.0.1 at 2013-03-26 14:59:17 +0900
+Served asset /jquery/js/jquery-1.9.1.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/kendo/styles/kendo.common.min.css?body=1" for 127.0.0.1 at 2013-03-26 14:59:17 +0900
+Served asset /kendo/styles/kendo.common.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery/js/jquery-ui-1.10.2.custom.min.js?body=1" for 127.0.0.1 at 2013-03-26 14:59:17 +0900
+Served asset /jquery/js/jquery-ui-1.10.2.custom.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery/styles/jquery-ui-1.10.2.custom.min?body=1" for 127.0.0.1 at 2013-03-26 14:59:17 +0900
+Served asset /jquery/styles/jquery-ui-1.10.2.custom.min - 304 Not Modified (5ms)
+
+
+Started GET "/assets/kendo/styles/kendo.default.min.css?body=1" for 127.0.0.1 at 2013-03-26 14:59:17 +0900
+Served asset /kendo/styles/kendo.default.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/kendo/js/kendo.web.min.js?body=1" for 127.0.0.1 at 2013-03-26 14:59:17 +0900
+Served asset /kendo/js/kendo.web.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-26 14:59:17 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/movie.js?body=1" for 127.0.0.1 at 2013-03-26 14:59:17 +0900
+Served asset /movie.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-26 14:59:17 +0900
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/kendo/styles/Default/loading-image.gif" for 127.0.0.1 at 2013-03-26 14:59:18 +0900
+Served asset /kendo/styles/Default/loading-image.gif - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery/styles/images/ui-bg_highlight-soft_100_f6f6f6_1x100.png" for 127.0.0.1 at 2013-03-26 14:59:18 +0900
+Served asset /jquery/styles/images/ui-bg_highlight-soft_100_f6f6f6_1x100.png - 304 Not Modified (0ms)
+
+
+Started GET "/movies/" for 127.0.0.1 at 2013-03-26 15:00:20 +0900
+  Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.5ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG', 'PG-13', 'NC-17', 'R')
+Rendered movies/index.html.haml within layouts/application (46.5ms)
+Compiled movie.js  (0ms)  (pid 2165)
+Compiled application.js  (26ms)  (pid 2165)
+Completed 200 OK in 125ms (Views: 120.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-26 15:00:20 +0900
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/kendo/styles/kendo.common.min.css?body=1" for 127.0.0.1 at 2013-03-26 15:00:20 +0900
+Served asset /kendo/styles/kendo.common.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery/styles/jquery-ui-1.10.2.custom.min?body=1" for 127.0.0.1 at 2013-03-26 15:00:20 +0900
+Served asset /jquery/styles/jquery-ui-1.10.2.custom.min - 304 Not Modified (0ms)
+
+
+Started GET "/assets/kendo/styles/kendo.default.min.css?body=1" for 127.0.0.1 at 2013-03-26 15:00:21 +0900
+Served asset /kendo/styles/kendo.default.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery/js/jquery-1.9.1.js?body=1" for 127.0.0.1 at 2013-03-26 15:00:21 +0900
+Served asset /jquery/js/jquery-1.9.1.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-26 15:00:21 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery/js/jquery-ui-1.10.2.custom.min.js?body=1" for 127.0.0.1 at 2013-03-26 15:00:21 +0900
+Served asset /jquery/js/jquery-ui-1.10.2.custom.min.js - 304 Not Modified (180ms)
+
+
+Started GET "/assets/kendo/js/kendo.web.min.js?body=1" for 127.0.0.1 at 2013-03-26 15:00:21 +0900
+Served asset /kendo/js/kendo.web.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/movie.js?body=1" for 127.0.0.1 at 2013-03-26 15:00:21 +0900
+Served asset /movie.js - 200 OK (10ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-26 15:00:21 +0900
+Served asset /application.js - 200 OK (39ms)
+
+
+Started GET "/assets/kendo/styles/Default/loading-image.gif" for 127.0.0.1 at 2013-03-26 15:00:22 +0900
+Served asset /kendo/styles/Default/loading-image.gif - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery/styles/images/ui-bg_highlight-soft_100_f6f6f6_1x100.png" for 127.0.0.1 at 2013-03-26 15:00:22 +0900
+Served asset /jquery/styles/images/ui-bg_highlight-soft_100_f6f6f6_1x100.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery/styles/images/ui-bg_highlight-soft_25_0073ea_1x100.png" for 127.0.0.1 at 2013-03-26 15:00:23 +0900
+Served asset /jquery/styles/images/ui-bg_highlight-soft_25_0073ea_1x100.png - 304 Not Modified (0ms)

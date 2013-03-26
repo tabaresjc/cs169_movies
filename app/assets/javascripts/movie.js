@@ -5,7 +5,8 @@ RP = {
 	$('#message_container').addClass('ui-widget');
 	$('#message_container #warning').addClass('ui-state-error ui-corner-all');
 	$('#message_container #notice').addClass('ui-state-default ui-corner-all');	
-        $( "a.add_movie" ).button();
+        $('a.add_movie').button();
+	$('#ratings_submit').button();
     },
 }
 $(RP.setup);
