@@ -1,19 +1,27 @@
--# edit.html.haml using partial
+%h4{:id => 'edit_movie_title'} Edit Existing Movie
+= form_tag movie_path(@movie), :method => :put, :class=> 'form-horizontal' do
+  %div.control-group
+    = label :movie, :title, 'Title', :class => 'control-label'
+    %div.controls
+      = text_field :movie, 'title', :placeholder => "Title of Movie"
+  %div.control-group
+    = label :movie, :director, 'Director', :class => 'control-label'
+    %div.controls
+      = text_field :movie, 'director', :placeholder => "Director of Movie"
 
-%h1 Edit Existing Movie
+  %div.control-group
+    = label :movie, :description, 'Description', :class => 'control-label'
+    %div.controls
+      = text_area :movie, 'description', :size => "35x4", :placeholder => "Add some description"
 
-= form_tag movie_path(@movie), :method => :put do
+  %div.control-group
+    = label :movie, :rating, 'Rating', :class => 'control-label'
+    %div.controls
+      = select :movie, :rating, ['G','PG','PG-13','R','NC-17']
 
-  = label :movie, :title, 'Title'
-  = text_field :movie, 'title'
+  %div.control-group
+    = label :movie, :release_date, 'Released On', :class => 'control-label'
+    %div.controls
+      = date_select :movie, :release_date
 
-  = label :movie, :rating, 'Rating'
-  = select :movie, :rating, ['G','PG','PG-13','R','NC-17']
-
-  = label :movie, :release_date, 'Released On'
-  = date_select :movie, :release_date
-
-  = label :movie, :director, 'Director'
-  = text_field :movie, 'director'
-
-  = submit_tag 'Update Movie Info'
+  = submit_tag 'Update Movie Info', :class => 'btn btn-primary'

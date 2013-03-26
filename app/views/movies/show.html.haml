@@ -1,7 +1,5 @@
 -# in app/views/movies/show.html.haml
-
-%h1 Details about #{@movie.title}
-
+%h4 Details about #{@movie.title}
 %ul#details
   %li
     Rating:
@@ -13,14 +11,12 @@
     Director:
     = @movie.director
 
-%h3 Description:
+%h4 Description:
 
 %p#description= @movie.description
 
-= link_to 'Edit', edit_movie_path(@movie)
-= button_to 'Delete', movie_path(@movie), :method => :delete, :confirm => 'Are you sure?'
-
-= link_to 'Find Movies With Same Director', movie_movies_by_director_path(@movie)
-<br/>
-<br/>
-= link_to 'Back to movie list', movies_path
+= link_to 'Edit', edit_movie_path(@movie), :class => 'btn btn-primary'
+= link_to 'Find Movies With Same Director', movie_movies_by_director_path(@movie), :class => 'btn btn-primary'
+= link_to 'Back to movie list', movies_path, :class => 'btn btn-primary'
+<br/><br/>
+= button_to 'Delete', movie_path(@movie), :method => :delete, :confirm => 'Are you sure?', :class => 'btn btn-danger'

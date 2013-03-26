@@ -1,5 +1,4 @@
-%h1{:id => 'show_movie_title'} Details about #{@movie.title}
-
+%h4{:id => 'show_movie_title'} Details about #{@movie.title}
 %ul#details
   %li
     Rating:
@@ -11,7 +10,7 @@
     Director:
     = @movie.director
 
-%h3 Description:
+%h4 Description:
 %p#description= @movie.description
 = link_to 'Edit Movie', edit_movie_path(movie), :id => 'link_edit_movie'
 
