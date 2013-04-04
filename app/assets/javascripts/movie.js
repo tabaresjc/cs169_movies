@@ -1,15 +1,14 @@
 	RP = {
 	    setup: function() {
 		// construct new DOM elements
-	    },
+	    }
 	}
 	$(RP.setup);
 
 	RPShowMovie = {
 		setup: function() {		
-			// setup the show details for selected movie			
-			//$('<div id="showMovieBox"></div>').hide().appendTo($('body'));
-			$('a.movie_link').click(RPShowMovie.getMovieInfo);
+			// setup the show details for selected movie
+			$('a.show_movie_link').click(RPShowMovie.getMovieInfo);
 		},
 		getMovieInfo: function() {
 			// on click, request the html body of movie details from server using AJAX
@@ -22,63 +21,47 @@
 			return(false);
 		},
 		showMovieBox: function(data) {
-			// once the AJAX request has been succesfull, render html data onto movieInfo box and display as Dialog			
-			$('#showMovieBox .modal-body').html(data);
-			$('#showMovieBox .modal-header #header_title').html($('#show_movie_title').hide().text());
-			$('#showMovieBox #edit-movie-link').html('Edit Movie').off("click").on("click", RPShowMovie.getEditMovieInfo);
+			// once the AJAX request has been succesfull, render html data onto movieInfo box and display as Dialog
+			$('#modalBox .modal-body').html(data);
+			$('#modalBox .modal-header #header_title').html($('#box_title').hide().text());
+			$('#action-link').hide();
 
-			$('#showMovieBox').modal();
-			$('#showMovieBox').modal('show');
+			$('#modalBox').modal();
+			$('#modalBox').modal('show');
+		}
+	}
+	$(RPShowMovie.setup);
 
-			/*
-			$('#showMovieBox').html(data).dialog({
-				title: $('#show_movie_title').text(),
-				width: '50%',
-				resizable: false,
-				buttons: {
-					Edit: RPShowMovie.getEditMovieInfo,
-					Close: function() { $(this).dialog( "close" ); }
-				}
-			});
- 			$('#show_movie_title').hide();
-			$('#link_edit_movie').hide();
-			*/
+	RPEditMovie = {
+		setup: function() {		
+			// setup the show details for selected movie
+			$('a.edit_movie_link').click(RPEditMovie.getEditMovieInfo);
 		},
 		getEditMovieInfo: function() {
 			$.ajax({type: 'GET',
-				url: $('#link_edit_movie').attr('href'),
+				url: $(this).attr('href'),
 				timeout: 5000,
-				success: RPShowMovie.showEditMovieInfo,
+				success: RPEditMovie.showEditMovieInfo,
 				error: function() { alert('Error!'); }
 			});
 			return(false);
 		},
-		showEditMovieInfo: function(data) {			
-			$('#showMovieBox .modal-body').html(data);
-			$('#showMovieBox .modal-header #header_title').html($('#edit_movie_title').hide().text());			
-			$('#showMovieBox #edit-movie-link').html('Update Movie').off("click").on("click", RPShowMovie.updateMovieInfo);
+		showEditMovieInfo: function(data) {
+			// once the AJAX request has been succesfull, render html data onto movieInfo box and display as Dialog
+			$('#modalBox .modal-body').html(data);
+			$('#modalBox .modal-header #header_title').html($('#box_title').hide().text());
+			$('#action-link').show();
+			$('#action-link').html('Update Movie').off("click").on("click", RPEditMovie.updateMovieInfo);
 
-			$('#showMovieBox').modal();
-			$('#showMovieBox').modal('show');
-			/*
-			$('#showMovieBox').html(data).dialog({
-				title: $('#edit_movie_title').text(),
-				width: '50%',
-				resizable: false,
-				buttons: {
-					Close: function() { $(this).dialog( "close" ); },
-					Save: RPShowMovie.updateMovieInfo
-				}
-			});
-		        $('#edit_movie_title').hide();
-			*/
+			$('#modalBox').modal();
+			$('#modalBox').modal('show');
 		},
 		updateMovieInfo: function() {
 			$.ajax({type: 'POST',
-				url: $('#showMovieBox .modal-body form').attr('action'),
-				data: $('#showMovieBox .modal-body form').serialize(),
+				url: $('#modalBox .modal-body form').attr('action'),
+				data: $('#modalBox .modal-body form').serialize(),
 				timeout: 5000,
-				success: RPShowMovie.redirectToHome,
+				success: RPEditMovie.redirectToHome,
 				error: function() { alert('Error!'); }
 			       });
 			return(false);
@@ -89,7 +72,7 @@
 			return(false);
 		}
 	}
-	$(RPShowMovie.setup);
+	$(RPEditMovie.setup);
 
 
 	RPAddMovie = {
@@ -106,13 +89,14 @@
 			return(false);		
 		},
 		showNewMovie: function(data) {
-			
-			$('#newMovieBox .modal-body').html(data);
-			$('#newMovieBox .modal-header #header_title').html($('#new_movie_title').hide().text());
-			$('#newMovieBox #save-movie-link').off("click").on("click", RPAddMovie.saveNewMovie);
+			// once the AJAX request has been succesfull, render html data onto movieInfo box and display as Dialog
+			$('#modalBox .modal-body').html(data);
+			$('#modalBox .modal-header #header_title').html($('#box_title').hide().text());
+			$('#action-link').show();
+			$('#action-link').html('Add Movie').off("click").on("click", RPAddMovie.saveNewMovie);
 
-			$('#newMovieBox').modal();		
-			$('#newMovieBox').modal('show');
+			$('#modalBox').modal();
+			$('#modalBox').modal('show');
 			/*
 			$('#newMovieBox').html(data).dialog({
 				title: $('#new_movie_title').hide().text(),
@@ -138,8 +122,8 @@
 		},
 		saveNewMovie: function() {
 			$.ajax({type: 'POST',
-				url: $('#newMovieBox .modal-body form').attr('action'),
-				data: $('#newMovieBox .modal-body form').serialize(),
+				url: $('#modalBox .modal-body form').attr('action'),
+				data: $('#modalBox .modal-body form').serialize(),
 				timeout: 5000,
 				success: RPAddMovie.redirectToHome,
 				error: function() { alert('Error!'); }
@@ -153,4 +137,6 @@
 		}
 	}
 	$(RPAddMovie.setup);
+
+
 
