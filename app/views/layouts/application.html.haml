@@ -10,15 +10,13 @@
 
 	%body
 		= render :partial => "layouts/header_container"
-		%header{:class=>'jumbotron subhead'}
-		%div.container
-			- if flash[:notice]
-				%div{:class=>'btn btn-success btn-large btn-block'}= flash[:notice]
-			- elsif flash[:warning]
-				%div{:class=>'btn btn-warning btn-large btn-block'}= flash[:warning]
-
+		
 		%div.container-fluid
 			%div.row-fluid
+				- if flash[:notice]
+					%div{:class=>'alert alert-success'}= flash[:notice]
+				- elsif flash[:warning]
+					%div{:class=>'alert alert-error'}= flash[:warning]
+			%div.row-fluid
 				= yield
-
 	= javascript_include_tag 'application'

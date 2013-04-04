@@ -1,33 +1,52 @@
 -#  This file is app/views/movies/index.html.haml
+
 %h3 All Movies
 
 = form_tag movies_path, :method => :get, :id => 'ratings_form' do
-  = hidden_field_tag "title_sort", true if @title_header
-  = hidden_field_tag ":release_date_sort", true if @date_header
-  %h4 Include: 
-  - @all_ratings.each do |rating|
-    <label class="checkbox inline">
-    = check_box_tag "ratings[#{rating}]", 1, @selected_ratings.include?(rating), :id => "ratings_#{rating}"
-    = rating
-    </label>
-  = submit_tag 'Refresh', :id => 'ratings_submit', :class => 'btn btn-primary'
+	= hidden_field_tag "title_sort", true if @title_header
+	= hidden_field_tag ":release_date_sort", true if @date_header
+	%h4 Include: 
+	- @all_ratings.each do |rating|
+		<label class="checkbox inline">
+		= check_box_tag "ratings[#{rating}]", 1, @selected_ratings.include?(rating), :id => "ratings_#{rating}"
+		= rating
+		</label>
+	= submit_tag 'Refresh', :id => 'ratings_submit', :class => 'btn btn-primary'
 
 = link_to 'Add new movie', new_movie_path, :id => 'add_movie', :class => 'btn btn-primary'
-<br/><br/>
+<br/>
+<br/>
 %table#movies{:class=>'table table-bordered table-hover table-condensed'}
-  %thead
-    %tr
-      %th{:class => @title_header}= link_to 'Movie Title', movies_path(:sort => 'title', :ratings => @selected_ratings), :id => 'title_header'
-      %th Rating
-      %th{:class => @date_header}= link_to 'Release Date', movies_path(:sort => 'release_date', :ratings => @selected_ratings), :id => 'release_date_header'
-      %th More Info
-  %tbody
-    - @movies.each do |movie|
-      %tr
-        %td= movie.title 
-        %td= movie.rating
-        %td= movie.release_date
-        %td= link_to "More about #{movie.title}", movie_path(movie), :class => 'movie_link'
+	%thead
+		%tr
+			%th{:class => 'title_header'}= link_to 'Movie Title', movies_path(:sort => 'title', :ratings => @selected_ratings), :id => 'title_header'
+			%th Rating
+			%th{:class => 'date_header'}= link_to 'Release Date', movies_path(:sort => 'release_date', :ratings => @selected_ratings), :id => 'release_date_header'
+			%th More Info
+	%tbody
+	- @movies.each do |movie|
+		%tr
+		%td= movie.title 
+		%td= movie.rating
+		%td= movie.release_date
+		%td
+			%div{:class => 'inline'}
+				= link_to (content_tag(:i, "", :class => "icon-search")+'Show').html_safe, movie_path(movie), :class => 'show_movie_link'
+				= link_to (content_tag(:i, "", :class => "icon-edit")+'Edit').html_safe, edit_movie_path(movie), :class => 'edit_movie_link'
+				= link_to (content_tag(:i, "", :class => "icon-trash")+'Delete').html_safe, movie_path(movie), :method => :delete, :confirm => 'Are you sure?', :class => 'delete_movie_link'
 
-
+%div#newMovieBox{:class => 'modal hide fade'}
+	%div.modal-header
+		%h4#header_title
+	%div.modal-body
+	%div.modal-footer
+		= link_to 'Close', '#', :class => 'btn', 'data-dismiss'=>'modal', 'aria-hidden'=>'true'
+		= link_to 'Save changes', '#', :id => 'save-movie-link', :class => 'btn btn-primary'
+%div#showMovieBox{:class => 'modal hide fade'}
+	%div.modal-header
+		%h4#header_title
+	%div.modal-body
+	%div.modal-footer
+		= link_to 'Close', '#', :class => 'btn', 'data-dismiss'=>'modal', 'aria-hidden'=>'true'
+		= link_to 'Edit Movie', '#', :id => 'edit-movie-link', :class => 'btn btn-primary'
 
