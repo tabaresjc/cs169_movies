@@ -33,7 +33,7 @@
 			%div{:class => 'inline'}
 				= link_to (content_tag(:i, "", :class => "icon-search")+'Show').html_safe, movie_path(movie), :class => 'show_movie_link'
 				= link_to (content_tag(:i, "", :class => "icon-edit")+'Edit').html_safe, edit_movie_path(movie), :class => 'edit_movie_link'
-				= link_to (content_tag(:i, "", :class => "icon-trash")+'Delete').html_safe, movie_path(movie), :method => :delete, :confirm => 'Are you sure?', :class => 'delete_movie_link'
+				= link_to (content_tag(:i, "", :class => "icon-trash")+'Delete').html_safe, movie_path(movie), :method => :delete, :confirm => 'Are you sure?', :class => 'delete_movie_link', :style => 'visibility:hidden'
 
 %div#modalBox{:class => 'modal hide fade'}
 	%div.modal-header

@@ -1,6 +1,7 @@
 	RP = {
 	    setup: function() {
 		// construct new DOM elements
+		$('a.delete_movie_link').css({'visibility':'visible'});
 	    }
 	}
 	$(RP.setup);
